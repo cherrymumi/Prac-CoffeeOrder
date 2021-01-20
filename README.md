@@ -8,6 +8,7 @@ Hi, there!
 使用基本的結構：Model、DAO、Controller，資料庫使用 MySQL。
 
 專案開始於 2021/1/20，將每日更新。
+
 來杯咖啡吧！
 
 
@@ -25,4 +26,4 @@ Connect to MySQL database.
 
 This project started on 1/20/2021 and will be updated everyday.
 
-Lets have a coffee time!
+Let's have a coffee!
