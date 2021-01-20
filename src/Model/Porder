@@ -1,0 +1,77 @@
+package Model;
+
+public class Porder {
+	
+	// 訂單資訊：序號、桌號、A產品數量、B產品數量、C產品數量、總金額
+	private Integer id;
+	private String desk;
+	private Integer qtyA;
+	private Integer qtyB;
+	private Integer qtyC;
+	private Integer sum;
+	
+	// 固定資訊：A產品價格、B產品價格、C產品價格
+	private static Integer priceA = 120;
+	private static Integer priceB = 135;
+	private static Integer priceC = 150;
+	
+	public Porder(String desk, Integer qtyA, Integer qtyB, Integer qtyC) {
+		super();
+		this.desk = desk;
+		this.qtyA = qtyA;
+		this.qtyB = qtyB;
+		this.qtyC = qtyC;
+		
+		this.sum = qtyA*priceA + qtyB*priceB + qtyC*priceC;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getDesk() {
+		return desk;
+	}
+
+	public void setDesk(String desk) {
+		this.desk = desk;
+	}
+
+	public Integer getQtyA() {
+		return qtyA;
+	}
+
+	public void setQtyA(Integer qtyA) {
+		this.qtyA = qtyA;
+	}
+
+	public Integer getQtyB() {
+		return qtyB;
+	}
+
+	public void setQtyB(Integer qtyB) {
+		this.qtyB = qtyB;
+	}
+
+	public Integer getQtyC() {
+		return qtyC;
+	}
+
+	public void setQtyC(Integer qtyC) {
+		this.qtyC = qtyC;
+	}
+
+	public Integer getSum() {
+		this.sum = qtyA*priceA + qtyB*priceB + qtyC*priceC;
+		return sum;
+	}
+
+	public void setSum(Integer sum) {
+		this.sum = sum;
+	}
+	
+}
